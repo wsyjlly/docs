@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>YSW-NOTE</title>
+    <meta name="description" content="晏沈威的笔记">
+    <link rel="icon" href="/assets/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.2749efcc.css" as="style"><link rel="preload" href="/assets/js/app.2d4845b5.js" as="script"><link rel="preload" href="/assets/js/2.974af1fb.js" as="script"><link rel="preload" href="/assets/js/18.b0600c14.js" as="script"><link rel="prefetch" href="/assets/js/10.48cab603.js"><link rel="prefetch" href="/assets/js/11.652fa16d.js"><link rel="prefetch" href="/assets/js/12.b0608426.js"><link rel="prefetch" href="/assets/js/13.e9415f24.js"><link rel="prefetch" href="/assets/js/14.dde1bec7.js"><link rel="prefetch" href="/assets/js/15.8b695c03.js"><link rel="prefetch" href="/assets/js/16.647cd73d.js"><link rel="prefetch" href="/assets/js/17.af05518d.js"><link rel="prefetch" href="/assets/js/19.953b459c.js"><link rel="prefetch" href="/assets/js/20.e2a7f6e3.js"><link rel="prefetch" href="/assets/js/21.60a88409.js"><link rel="prefetch" href="/assets/js/22.d40553da.js"><link rel="prefetch" href="/assets/js/23.eea7414f.js"><link rel="prefetch" href="/assets/js/24.1c179723.js"><link rel="prefetch" href="/assets/js/25.a116c32f.js"><link rel="prefetch" href="/assets/js/26.93e18f12.js"><link rel="prefetch" href="/assets/js/27.e703db15.js"><link rel="prefetch" href="/assets/js/28.9d5a600f.js"><link rel="prefetch" href="/assets/js/29.ec56e0f7.js"><link rel="prefetch" href="/assets/js/3.b9e90bed.js"><link rel="prefetch" href="/assets/js/30.3419dbef.js"><link rel="prefetch" href="/assets/js/31.5541885c.js"><link rel="prefetch" href="/assets/js/4.383e9253.js"><link rel="prefetch" href="/assets/js/5.29032b90.js"><link rel="prefetch" href="/assets/js/6.3374be4e.js"><link rel="prefetch" href="/assets/js/7.8d4d8ec7.js"><link rel="prefetch" href="/assets/js/8.d15a2d70.js"><link rel="prefetch" href="/assets/js/9.4b953eaf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2749efcc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">YSW-NOTE</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Java笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Java/SpringBoot.html" class="nav-link">SpringBoot</a></li><li class="dropdown-item"><!----> <a href="/Java/MybatisPlus.html" class="nav-link">MybatisPlus</a></li><li class="dropdown-item"><!----> <a href="/Java/Java基础.html" class="nav-link">Java基础</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Docker笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Docker/docker命令.html" class="nav-link">docker命令</a></li><li class="dropdown-item"><!----> <a href="/Docker/软件安装.html" class="nav-link">软件安装</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Html标签.html" class="nav-link">Html标签</a></li><li class="dropdown-item"><!----> <a href="/Web/CSS3属性.html" class="nav-link">CSS3属性</a></li><li class="dropdown-item"><!----> <a href="/Web/Vue.html" class="nav-link">Vue</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Something</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/12306.html" class="nav-link router-link-exact-active router-link-active">12306</a></li><li class="dropdown-item"><!----> <a href="/Other/CentOS 7.html" class="nav-link">CentOS 7</a></li><li class="dropdown-item"><!----> <a href="/Other/Git.html" class="nav-link">Git</a></li><li class="dropdown-item"><!----> <a href="/Other/sfow项目部署.html" class="nav-link">SFOW</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Java笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Java/SpringBoot.html" class="nav-link">SpringBoot</a></li><li class="dropdown-item"><!----> <a href="/Java/MybatisPlus.html" class="nav-link">MybatisPlus</a></li><li class="dropdown-item"><!----> <a href="/Java/Java基础.html" class="nav-link">Java基础</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Docker笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Docker/docker命令.html" class="nav-link">docker命令</a></li><li class="dropdown-item"><!----> <a href="/Docker/软件安装.html" class="nav-link">软件安装</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Web/Html标签.html" class="nav-link">Html标签</a></li><li class="dropdown-item"><!----> <a href="/Web/CSS3属性.html" class="nav-link">CSS3属性</a></li><li class="dropdown-item"><!----> <a href="/Web/Vue.html" class="nav-link">Vue</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Something</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Other/12306.html" class="nav-link router-link-exact-active router-link-active">12306</a></li><li class="dropdown-item"><!----> <a href="/Other/CentOS 7.html" class="nav-link">CentOS 7</a></li><li class="dropdown-item"><!----> <a href="/Other/Git.html" class="nav-link">Git</a></li><li class="dropdown-item"><!----> <a href="/Other/sfow项目部署.html" class="nav-link">SFOW</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Something</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Other/12306.html" class="active sidebar-link">12306</a></li><li><a href="/Other/CentOS 7.html" class="sidebar-link">CentOS 7</a></li><li><a href="/Other/Git.html" class="sidebar-link">Git</a></li><li><a href="/Other/sfow项目部署.html" class="sidebar-link">SFOW</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>[TOC]</p> <h1 id="_12306抢票脚本"><a href="#_12306抢票脚本" aria-hidden="true" class="header-anchor">#</a> 12306抢票脚本</h1> <h4 id="本脚本使用一个类来实现所有代码，大体上分为以下几个模块及其步骤："><a href="#本脚本使用一个类来实现所有代码，大体上分为以下几个模块及其步骤：" aria-hidden="true" class="header-anchor">#</a> 本脚本使用一个类来实现所有代码，大体上分为以下几个模块及其步骤：</h4> <ul><li>初始化对象属性（在抢票前进行的属性初始化，包括初始化浏览器模拟对象，个人信息等）。</li> <li>建立模拟浏览器，模拟浏览器进行cookie等存储。</li> <li>验证模块：
+<ul><li>获取验证图片到本地</li> <li>将8个图片坐标位置改装成易于输入的1—8的位置编号，输入对应的位置号</li> <li>发送请求进行后台校验</li></ul></li> <li>登录模块：
+<ul><li>输入账号密码，请求服务器</li> <li>获取apptk授权码</li> <li>授权通过，成功获取用户信息，将授权信息存储到cookie</li></ul></li> <li>获取站点模块：
+<ul><li>获取所有站点名称</li> <li>获取所有站点码</li></ul></li> <li>获取余票信息模块：
+<ul><li>输入起始站点与乘车时间，请求服务器，查询余票信息</li> <li>将余票信息进行格式化输出</li> <li>选择相应车次</li></ul></li> <li>订单模块：
+<ul><li>注入起始点、日期，车次码信息，提交请求，返回状态信息</li> <li>获取该车次的详细信息，选择车票类型</li> <li>获取所有已添加乘客</li> <li>选择乘车乘客</li> <li>检查订单信息</li> <li>确认订单信息，占座成功，下单完成</li> <li>发送邮件，短信，提醒支付</li></ul></li></ul> <hr> <h4 id="以下贴出所有源码，仅供参考，其中发送邮件与发送短信模块所需的参数须自行到相关网站获取。"><a href="#以下贴出所有源码，仅供参考，其中发送邮件与发送短信模块所需的参数须自行到相关网站获取。" aria-hidden="true" class="header-anchor">#</a> 以下贴出所有源码，仅供参考，其中发送邮件与发送短信模块所需的参数须自行到相关网站获取。</h4> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># -*- coding:utf-8 -*-</span>
+<span class="token keyword">from</span> urllib <span class="token keyword">import</span> request
+<span class="token keyword">from</span> json <span class="token keyword">import</span> loads
+<span class="token keyword">from</span> prettytable <span class="token keyword">import</span> PrettyTable
+<span class="token keyword">from</span> colorama <span class="token keyword">import</span> init<span class="token punctuation">,</span> Fore<span class="token punctuation">,</span> Back<span class="token punctuation">,</span> Style
+<span class="token keyword">from</span> email<span class="token punctuation">.</span>mime<span class="token punctuation">.</span>text <span class="token keyword">import</span> MIMEText
+<span class="token keyword">from</span> qcloudsms_py <span class="token keyword">import</span> SmsSingleSender
+<span class="token keyword">from</span> qcloudsms_py<span class="token punctuation">.</span>httpclient <span class="token keyword">import</span> HTTPError
+<span class="token keyword">import</span> urllib<span class="token punctuation">.</span>parse <span class="token keyword">as</span> parse
+<span class="token keyword">import</span> http<span class="token punctuation">.</span>cookiejar <span class="token keyword">as</span> cookiejar
+<span class="token keyword">import</span> re
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> smtplib
+<span class="token comment"># 200 32</span>
+<span class="token comment"># 150 23</span>
+<span class="token comment"># 70  10</span>
+init<span class="token punctuation">(</span>autoreset<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">Colored</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment">#  前景色:红色  背景色:默认</span>
+    <span class="token keyword">def</span> <span class="token function">red</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> Fore<span class="token punctuation">.</span>LIGHTRED_EX <span class="token operator">+</span> s <span class="token operator">+</span> Fore<span class="token punctuation">.</span>RESET
+    <span class="token comment">#  前景色:绿色  背景色:默认</span>
+    <span class="token keyword">def</span> <span class="token function">green</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> Fore<span class="token punctuation">.</span>LIGHTGREEN_EX <span class="token operator">+</span> s <span class="token operator">+</span> Fore<span class="token punctuation">.</span>RESET
+    <span class="token keyword">def</span> <span class="token function">yellow</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> Fore<span class="token punctuation">.</span>LIGHTYELLOW_EX <span class="token operator">+</span> s <span class="token operator">+</span> Fore<span class="token punctuation">.</span>RESET
+    <span class="token keyword">def</span> <span class="token function">white</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> Fore<span class="token punctuation">.</span>LIGHTWHITE_EX <span class="token operator">+</span> s <span class="token operator">+</span> Fore<span class="token punctuation">.</span>RESET
+    <span class="token keyword">def</span> <span class="token function">blue</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> Fore<span class="token punctuation">.</span>LIGHTBLUE_EX <span class="token operator">+</span> s <span class="token operator">+</span> Fore<span class="token punctuation">.</span>RESET
+
+<span class="token keyword">class</span> <span class="token class-name">train_ticket_purchase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        初始化对象属性
+    &quot;&quot;&quot;</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>headers <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'User-Agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'</span><span class="token punctuation">}</span>
+        self<span class="token punctuation">.</span>opener <span class="token operator">=</span> self<span class="token punctuation">.</span>__get_opener<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>username <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+        self<span class="token punctuation">.</span>phone_number <span class="token operator">=</span> <span class="token string">&quot;13781206061&quot;</span><span class="token comment">#用于占座成功接收短信</span>
+        self<span class="token punctuation">.</span>receive_email <span class="token operator">=</span> <span class="token string">&quot;wsyjlly@foxmail.com&quot;</span><span class="token comment">#用于占座成功接收邮件</span>
+        self<span class="token punctuation">.</span>seatType <span class="token operator">=</span> <span class="token string">&quot;1&quot;</span>         <span class="token comment">#1硬座</span>
+        self<span class="token punctuation">.</span>seat_types_code <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;M&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;N&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;2&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;3&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;4&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;F&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;6&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;9&quot;</span><span class="token punctuation">]</span>
+        self<span class="token punctuation">.</span>ticketType <span class="token operator">=</span> <span class="token string">&quot;1&quot;</span>       <span class="token comment">#成人票</span>
+        self<span class="token punctuation">.</span>query_seats_count <span class="token operator">=</span> <span class="token number">1</span>  <span class="token comment">#查票次数</span>
+        self<span class="token punctuation">.</span>passengers_name <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>   <span class="token comment">#乘车人字符串</span>
+        self<span class="token punctuation">.</span>seat_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;yz_num&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;wz_num&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;rz_num&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;yw_num&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;rw_num&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;dw_num&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;gr_num&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;ze_num&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;zy_num&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;swz_num&quot;</span><span class="token punctuation">]</span>
+        self<span class="token punctuation">.</span>ticketTypes <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;成人票&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;2&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;儿童票&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;3&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;学生票&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;4&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;残军票&quot;</span><span class="token punctuation">}</span>
+        self<span class="token punctuation">.</span>seatTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;M&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;一等座&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;0&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;二等座&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;1&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;硬座&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;N&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;无座&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;2&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;软座&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;3&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;硬卧&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;4&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;软卧&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;F&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;动卧&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;6&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;高等软卧&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;9&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;商务座&quot;</span>
+        <span class="token punctuation">}</span>
+        self<span class="token punctuation">.</span>seat_dict <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;yz_num&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;硬座&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;wz_num&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;无座&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;rz_num&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;软座&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;yw_num&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;硬卧&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;rw_num&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;软卧&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;dw_num&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;动卧&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;gr_num&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;高级软卧&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;ze_num&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;二等座&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;zy_num&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;一等座&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;swz_num&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;商务特等座&quot;</span>
+        <span class="token punctuation">}</span>
+
+
+
+
+
+
+
+
+
+
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        建立模拟浏览器，模拟浏览器进行cookie存储
+    &quot;&quot;&quot;</span>
+    <span class="token keyword">def</span> <span class="token function">__get_opener</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        c <span class="token operator">=</span> cookiejar<span class="token punctuation">.</span>LWPCookieJar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        cookie <span class="token operator">=</span> request<span class="token punctuation">.</span>HTTPCookieProcessor<span class="token punctuation">(</span>c<span class="token punctuation">)</span>
+        opener <span class="token operator">=</span> request<span class="token punctuation">.</span>build_opener<span class="token punctuation">(</span>cookie<span class="token punctuation">)</span>
+        request<span class="token punctuation">.</span>install_opener<span class="token punctuation">(</span>opener<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> opener
+
+
+
+
+
+
+
+
+
+
+
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        验证模块：
+            1、获取验证图片到本地
+            2、将8个图片坐标位置改装成易于输入的1—8的位置编号，输入对应的位置号
+            3、发送请求进行后台校验
+    &quot;&quot;&quot;</span>
+    <span class="token comment"># 获取验证图片到本地</span>
+    <span class="token keyword">def</span> <span class="token function">get_image</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        req_catch_image <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span><span class="token string">'https://kyfw.12306.cn/passport/captcha/captcha-image'</span><span class="token punctuation">)</span>
+        req_catch_image<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        code_file <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req_catch_image<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 此时为浏览器的open而不再是request.urlopen,下同</span>
+        <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'/code.jpg'</span><span class="token punctuation">,</span> <span class="token string">'wb'</span><span class="token punctuation">)</span><span class="token keyword">as</span> f<span class="token punctuation">:</span>
+            f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>code_file<span class="token punctuation">)</span>
+    <span class="token comment"># 图片校验</span>
+    <span class="token keyword">def</span> <span class="token function">verify</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        answer <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;1&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;40,40&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;2&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;110,40&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;3&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;180,40&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;4&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;260,40&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;5&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;40,120&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;6&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;110,120&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;7&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;180,120&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;8&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;260,120&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;+----------+----------+----------+----------+&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|    1     |    2     |    3     |    4     |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|----------|----------|----------|----------|&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|    5     |    6     |    7     |    8     |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;+----------+----------+----------+----------+&quot;</span><span class="token punctuation">)</span>
+        input_code <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;请在1—8中选择输入验证图片编号，以半角','隔开。(例如：1,3,5):&quot;</span><span class="token punctuation">)</span>
+        answer_code <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> input_code<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">&quot;,&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                answer_code <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token string">&quot;,&quot;</span> <span class="token operator">+</span> answer<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token keyword">is</span> <span class="token keyword">not</span> input_code<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">else</span> answer<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">except</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;输入有误,请重新输入！&quot;</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>verify<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 进行图片验证码验证</span>
+        req_check <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span><span class="token string">'https://kyfw.12306.cn/passport/captcha/captcha-check'</span><span class="token punctuation">)</span>
+        req_check<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        data <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">'answer'</span><span class="token punctuation">:</span> answer_code<span class="token punctuation">,</span>
+            <span class="token string">'login_site'</span><span class="token punctuation">:</span> <span class="token string">'E'</span><span class="token punctuation">,</span>
+            <span class="token string">'rand'</span><span class="token punctuation">:</span> <span class="token string">'sjrand'</span>
+        <span class="token punctuation">}</span>
+        data <span class="token operator">=</span> parse<span class="token punctuation">.</span>urlencode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 返回验证结果</span>
+        check_result <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req_check<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 读取出来是byts格式，转换为‘utf-8（默认）</span>
+        <span class="token keyword">return</span> loads<span class="token punctuation">(</span>check_result<span class="token punctuation">)</span>
+    <span class="token comment"># 验证系统</span>
+    <span class="token keyword">def</span> <span class="token function">sys_verify</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>get_image<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        verify_result <span class="token operator">=</span> self<span class="token punctuation">.</span>verify<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">while</span> verify_result<span class="token punctuation">[</span><span class="token string">'result_code'</span><span class="token punctuation">]</span> <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token string">'4'</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'验证失败，已重新下载图片，请重新验证！'</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>get_image<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            verify_result <span class="token operator">=</span> self<span class="token punctuation">.</span>verify<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;验证通过！&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span>
+
+
+
+
+
+
+
+
+
+
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        登录模块：
+            1、输入账号密码，请求服务器
+            2、获取apptk授权码
+            3、授权通过，成功获取用户信息，将授权信息存储到cookie
+    &quot;&quot;&quot;</span>
+    <span class="token keyword">def</span> <span class="token function">login</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        req_login <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span><span class="token string">'https://kyfw.12306.cn/passport/web/login'</span><span class="token punctuation">)</span>
+        req_login<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;请输入12306帐号:&quot;</span><span class="token punctuation">)</span>
+        pwd <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;请输入密码:&quot;</span><span class="token punctuation">)</span>
+        data <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">'username'</span><span class="token punctuation">:</span> name<span class="token punctuation">,</span>
+            <span class="token string">'password'</span><span class="token punctuation">:</span> pwd<span class="token punctuation">,</span>
+            <span class="token string">'appid'</span><span class="token punctuation">:</span> <span class="token string">'otn'</span>
+        <span class="token punctuation">}</span>
+        data <span class="token operator">=</span> parse<span class="token punctuation">.</span>urlencode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 返回登录结果</span>
+        login_result <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req_login<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> loads<span class="token punctuation">(</span>login_result<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">get_tk</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        req <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span><span class="token string">'https://kyfw.12306.cn/passport/web/auth/uamtk'</span><span class="token punctuation">)</span>
+        req<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        data <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;appid&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;otn&quot;</span>
+        <span class="token punctuation">}</span>
+        data <span class="token operator">=</span> parse<span class="token punctuation">.</span>urlencode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 返回登录结果</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> loads<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">auth</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>newapptk<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        req <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span><span class="token string">'https://kyfw.12306.cn/otn/uamauthclient'</span><span class="token punctuation">)</span>
+        req<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        data <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;tk&quot;</span><span class="token punctuation">:</span> newapptk
+        <span class="token punctuation">}</span>
+        data <span class="token operator">=</span> parse<span class="token punctuation">.</span>urlencode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 返回登录结果</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> loads<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    <span class="token comment"># 登陆系统</span>
+    <span class="token keyword">def</span> <span class="token function">sys_login</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>login<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>get_tk<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            result <span class="token operator">=</span> self<span class="token punctuation">.</span>auth<span class="token punctuation">(</span>result<span class="token punctuation">[</span><span class="token string">'newapptk'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;登录失败,账号或密码错误!&quot;</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>sys_verify<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>sys_login<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>username <span class="token operator">=</span> result<span class="token punctuation">[</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">]</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;欢迎用户&quot;</span><span class="token punctuation">,</span>result<span class="token punctuation">[</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">&quot;您已登录成功！&quot;</span><span class="token punctuation">)</span> <span class="token keyword">if</span> result<span class="token punctuation">[</span><span class="token string">&quot;result_code&quot;</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token number">0</span> <span class="token keyword">else</span> <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">[</span><span class="token string">&quot;result_message&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span>
+
+
+
+
+
+
+
+
+
+
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        获取站点模块：
+            获取所有站点名称与站点码
+    &quot;&quot;&quot;</span>
+    <span class="token keyword">def</span> <span class="token function">__get_city_result</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        req_city_code <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span>
+            <span class="token string">'https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9093'</span><span class="token punctuation">)</span>
+        req_city_code<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req_city_code<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> result
+    <span class="token keyword">def</span> <span class="token function">get_city_code</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>__get_city_result<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        start <span class="token operator">=</span> result<span class="token punctuation">.</span>index<span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token operator">+</span><span class="token builtin">len</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+        result <span class="token operator">=</span> result<span class="token punctuation">[</span>start<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">:</span>start<span class="token operator">+</span><span class="token number">4</span><span class="token punctuation">]</span>
+        <span class="token comment"># print(result)</span>
+        <span class="token keyword">return</span> result
+    <span class="token keyword">def</span> <span class="token function">get_station_names</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>__get_city_result<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        stations <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">r'([\u4e00-\u9fa5]+)\|([A-Z]+)'</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span>
+        station_codes <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span>stations<span class="token punctuation">)</span>
+        station_names <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token builtin">zip</span><span class="token punctuation">(</span>station_codes<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> station_codes<span class="token punctuation">.</span>keys<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> station_names
+
+
+
+
+
+
+
+
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        获取余票信息模块：
+            1、输入起始站点与乘车时间，请求服务器，查询余票信息
+            2、将余票信息进行格式化输出
+            3、选择相应车次
+    &quot;&quot;&quot;</span>
+    <span class="token keyword">def</span> <span class="token function">get_tickets</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>from_station<span class="token punctuation">,</span> to_station<span class="token punctuation">,</span> train_date<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        url <span class="token operator">=</span> <span class="token string">'https://kyfw.12306.cn/otn/leftTicket/queryX?'</span>
+        data <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;leftTicketDTO.train_date&quot;</span><span class="token punctuation">:</span> train_date<span class="token punctuation">,</span>
+            <span class="token string">&quot;leftTicketDTO.from_station&quot;</span><span class="token punctuation">:</span> from_station<span class="token punctuation">,</span>
+            <span class="token string">&quot;leftTicketDTO.to_station&quot;</span><span class="token punctuation">:</span> to_station<span class="token punctuation">,</span>
+            <span class="token string">&quot;purpose_codes&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ADULT&quot;</span>
+        <span class="token punctuation">}</span>
+        req <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span>url <span class="token operator">+</span> parse<span class="token punctuation">.</span>urlencode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        req<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> loads<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">get_ticket_format</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>from_station_name<span class="token punctuation">,</span>from_station<span class="token punctuation">,</span>to_station_name<span class="token punctuation">,</span>to_station<span class="token punctuation">,</span>train_date<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'为您查询到从'</span><span class="token punctuation">,</span> from_station_name<span class="token punctuation">,</span> <span class="token string">'到'</span><span class="token punctuation">,</span> to_station_name<span class="token punctuation">,</span> <span class="token string">'的余票信息如下：'</span><span class="token punctuation">)</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>get_tickets<span class="token punctuation">(</span>from_station<span class="token punctuation">,</span> to_station<span class="token punctuation">,</span> train_date<span class="token punctuation">)</span>
+        result_list <span class="token operator">=</span> result<span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'result'</span><span class="token punctuation">]</span>
+
+        station_names <span class="token operator">=</span> self<span class="token punctuation">.</span>get_station_names<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        table <span class="token operator">=</span> PrettyTable<span class="token punctuation">(</span>
+            <span class="token punctuation">[</span><span class="token string">&quot;车次&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;出发/到达车站&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;出发/到达时间&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;历时&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;商务座&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;一等座&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;二等座&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;高级软卧&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;软卧&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;动卧&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;硬卧&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;软座&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;硬座&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;无座&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;其他&quot;</span><span class="token punctuation">,</span>
+             <span class="token string">&quot;备注&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> item <span class="token keyword">in</span> result_list<span class="token punctuation">:</span>
+            name <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token string">&quot;station_train_code&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;from_station_name&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">'start_time'</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;lishi&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;swz_num&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;zy_num&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;ze_num&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;gr_num&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;rw_num&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;dw_num&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;yw_num&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;rz_num&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;yz_num&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;wz_num&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;qt_num&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;note_num&quot;</span>
+            <span class="token punctuation">]</span>
+            data <span class="token operator">=</span> <span class="token punctuation">{</span>
+                <span class="token string">&quot;station_train_code&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;from_station_name&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;to_station_name&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">'start_time'</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">'end'</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;lishi&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;swz_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;zy_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;ze_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;dw_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;gr_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;rw_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;yw_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;rz_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;yz_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;wz_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;qt_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;note_num&quot;</span><span class="token punctuation">:</span> <span class="token string">''</span>
+            <span class="token punctuation">}</span>
+            item <span class="token operator">=</span> item<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'|'</span><span class="token punctuation">)</span>  <span class="token comment"># 用&quot;|&quot;分割字符串</span>
+            data<span class="token punctuation">[</span><span class="token string">'station_train_code'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>  <span class="token comment"># 车次在3号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'from_station_name'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span>  <span class="token comment"># 始发站信息在6号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'to_station_name'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span>  <span class="token comment"># 终点站信息在7号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'start_time'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span>  <span class="token comment"># 出发时间信息在8号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'arrive_time'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span>  <span class="token comment"># 抵达时间在9号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'lishi'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span>  <span class="token comment"># 经历时间在10号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'swz_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">32</span><span class="token punctuation">]</span> <span class="token keyword">or</span> item<span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">]</span>  <span class="token comment"># 特别注意：商务座在32或25位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'zy_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">31</span><span class="token punctuation">]</span>  <span class="token comment"># 一等座信息在31号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'ze_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">]</span>  <span class="token comment"># 二等座信息在30号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'gr_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">21</span><span class="token punctuation">]</span>  <span class="token comment"># 高级软卧信息在31号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'rw_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">23</span><span class="token punctuation">]</span>  <span class="token comment"># 软卧信息在23号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'dw_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">27</span><span class="token punctuation">]</span>  <span class="token comment"># 动卧信息在27号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'yw_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">28</span><span class="token punctuation">]</span>  <span class="token comment"># 硬卧信息在28号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'rz_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">24</span><span class="token punctuation">]</span>  <span class="token comment"># 软座信息在24号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'yz_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">29</span><span class="token punctuation">]</span>  <span class="token comment"># 硬座信息在29号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'wz_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">26</span><span class="token punctuation">]</span>  <span class="token comment"># 无座信息在26号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'qt_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">22</span><span class="token punctuation">]</span>  <span class="token comment"># 其他信息在22号位置</span>
+            data<span class="token punctuation">[</span><span class="token string">'note_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>  <span class="token comment"># 备注在1号位置</span>
+
+            color <span class="token operator">=</span> Colored<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 创建Colored对象</span>
+            data<span class="token punctuation">[</span><span class="token string">&quot;note_num&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> color<span class="token punctuation">.</span>white<span class="token punctuation">(</span>item<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token comment"># 如果没有信息用'-'代替</span>
+            <span class="token keyword">for</span> pos <span class="token keyword">in</span> name<span class="token punctuation">:</span>
+                <span class="token keyword">if</span> data<span class="token punctuation">[</span>pos<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">''</span><span class="token punctuation">:</span>
+                    data<span class="token punctuation">[</span>pos<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'-'</span>
+            tickets <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+            cont <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+            cont<span class="token punctuation">.</span>append<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+            <span class="token keyword">for</span> x <span class="token keyword">in</span> cont<span class="token punctuation">:</span>
+                tmp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                <span class="token keyword">for</span> y <span class="token keyword">in</span> name<span class="token punctuation">:</span>
+                    <span class="token keyword">if</span> y <span class="token operator">==</span> <span class="token string">&quot;from_station_name&quot;</span><span class="token punctuation">:</span>
+                        s <span class="token operator">=</span> color<span class="token punctuation">.</span>green<span class="token punctuation">(</span>station_names<span class="token punctuation">[</span>data<span class="token punctuation">[</span><span class="token string">'from_station_name'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'\n'</span> <span class="token operator">+</span> color<span class="token punctuation">.</span>red<span class="token punctuation">(</span>
+                            station_names<span class="token punctuation">[</span>data<span class="token punctuation">[</span><span class="token string">&quot;to_station_name&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                        tmp<span class="token punctuation">.</span>append<span class="token punctuation">(</span>s<span class="token punctuation">)</span>
+                    <span class="token keyword">elif</span> y <span class="token operator">==</span> <span class="token string">&quot;start_time&quot;</span><span class="token punctuation">:</span>
+                        s <span class="token operator">=</span> color<span class="token punctuation">.</span>green<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'start_time'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'\n'</span> <span class="token operator">+</span> color<span class="token punctuation">.</span>red<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">&quot;arrive_time&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                        tmp<span class="token punctuation">.</span>append<span class="token punctuation">(</span>s<span class="token punctuation">)</span>
+                    <span class="token keyword">elif</span> y <span class="token operator">==</span> <span class="token string">&quot;station_train_code&quot;</span><span class="token punctuation">:</span>
+                        s <span class="token operator">=</span> color<span class="token punctuation">.</span>blue<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'station_train_code'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                        tmp<span class="token punctuation">.</span>append<span class="token punctuation">(</span>s<span class="token punctuation">)</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        tmp<span class="token punctuation">.</span>append<span class="token punctuation">(</span>data<span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                tickets<span class="token punctuation">.</span>append<span class="token punctuation">(</span>tmp<span class="token punctuation">)</span>
+            <span class="token keyword">for</span> ticket <span class="token keyword">in</span> tickets<span class="token punctuation">:</span>
+                table<span class="token punctuation">.</span>add_row<span class="token punctuation">(</span>ticket<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>table<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">get_secret_str</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>from_station<span class="token punctuation">,</span> to_station<span class="token punctuation">,</span> train_date<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        secret_str <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>get_tickets<span class="token punctuation">(</span>from_station<span class="token punctuation">,</span> to_station<span class="token punctuation">,</span> train_date<span class="token punctuation">)</span>
+        result <span class="token operator">=</span> result<span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'result'</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> item <span class="token keyword">in</span> result<span class="token punctuation">:</span>
+            msg <span class="token operator">=</span> item<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">&quot;|&quot;</span><span class="token punctuation">)</span>
+            secret_str<span class="token punctuation">[</span>msg<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> parse<span class="token punctuation">.</span>unquote<span class="token punctuation">(</span>msg<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token comment"># print(secret_str)</span>
+        <span class="token keyword">return</span> secret_str
+    <span class="token keyword">def</span> <span class="token function">get_seats</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>station_train_code<span class="token punctuation">,</span>from_station<span class="token punctuation">,</span> to_station<span class="token punctuation">,</span> train_date<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        seats <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>get_tickets<span class="token punctuation">(</span>from_station<span class="token punctuation">,</span> to_station<span class="token punctuation">,</span> train_date<span class="token punctuation">)</span>
+        result <span class="token operator">=</span> result<span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'result'</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> item <span class="token keyword">in</span> result<span class="token punctuation">:</span>
+            item <span class="token operator">=</span> item<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">&quot;|&quot;</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span> item<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">==</span> station_train_code <span class="token punctuation">:</span>
+                seats<span class="token punctuation">[</span><span class="token string">'swz_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">32</span><span class="token punctuation">]</span> <span class="token keyword">or</span> item<span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">]</span>  <span class="token comment"># 特别注意：商务座在32或25位置</span>
+                seats<span class="token punctuation">[</span><span class="token string">'zy_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">31</span><span class="token punctuation">]</span>  <span class="token comment"># 一等座信息在31号位置</span>
+                seats<span class="token punctuation">[</span><span class="token string">'ze_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">]</span>  <span class="token comment"># 二等座信息在30号位置</span>
+                seats<span class="token punctuation">[</span><span class="token string">'gr_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">21</span><span class="token punctuation">]</span>  <span class="token comment"># 高级软卧信息在31号位置</span>
+                seats<span class="token punctuation">[</span><span class="token string">'rw_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">23</span><span class="token punctuation">]</span>  <span class="token comment"># 软卧信息在23号位置</span>
+                seats<span class="token punctuation">[</span><span class="token string">'dw_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">27</span><span class="token punctuation">]</span>  <span class="token comment"># 动卧信息在27号位置</span>
+                seats<span class="token punctuation">[</span><span class="token string">'yw_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">28</span><span class="token punctuation">]</span>  <span class="token comment"># 硬卧信息在28号位置</span>
+                seats<span class="token punctuation">[</span><span class="token string">'rz_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">24</span><span class="token punctuation">]</span>  <span class="token comment"># 软座信息在24号位置</span>
+                seats<span class="token punctuation">[</span><span class="token string">'yz_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">29</span><span class="token punctuation">]</span>  <span class="token comment"># 硬座信息在29号位置</span>
+                seats<span class="token punctuation">[</span><span class="token string">'wz_num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> item<span class="token punctuation">[</span><span class="token number">26</span><span class="token punctuation">]</span>  <span class="token comment"># 无座信息在26号位置</span>
+        <span class="token keyword">return</span> seats
+    <span class="token keyword">def</span> <span class="token function">select_order_details</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;座位码对照表：&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;-----------------------&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|  序号 |  座位类型   |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   M   |   一等座    |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   0   |   二等座    |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   1   |    硬座     |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   N   |    无座     |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   2   |    软座     |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   3   |    硬卧     |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   4   |    软卧     |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   F   |    动卧     |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   6   |  高级软卧   |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   9   |   商务座    |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;-----------------------&quot;</span><span class="token punctuation">)</span>
+        seatType <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;请选择车座类型，enter键默认硬座（例如：1）:&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> seatType <span class="token operator">==</span> <span class="token string">''</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>seatType <span class="token operator">=</span> <span class="token string">&quot;1&quot;</span>
+        <span class="token keyword">elif</span> seatType <span class="token keyword">in</span> self<span class="token punctuation">.</span>seat_types_code<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>seatType <span class="token operator">=</span> seatType
+        <span class="token keyword">else</span> <span class="token punctuation">:</span>
+            <span class="token keyword">raise</span> Exception<span class="token punctuation">(</span><span class="token string">&quot;没有对应的车座类型！&quot;</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;车票类型对照表：&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;-----------------------&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|  序号 |  座位类型  |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   1   |   成人票   |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   2   |   儿童票   |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   3   |   学生票   |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;|   4   |   残军票   |&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;-----------------------&quot;</span><span class="token punctuation">)</span>
+
+        ticketType <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;请选择车票类型，enter键默认成人票（例如：1）:&quot;</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>ticketType <span class="token operator">=</span> ticketType <span class="token keyword">if</span> seatType <span class="token operator">!=</span> <span class="token string">''</span> <span class="token keyword">else</span> <span class="token string">&quot;1&quot;</span>
+
+        passengers_name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;请输入乘车人姓名，如有多人，请以英文','隔开（例如：晏沈威,晏文艳）：&quot;</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>passengers_name <span class="token operator">=</span> passengers_name <span class="token keyword">if</span> passengers_name<span class="token operator">!=</span><span class="token string">''</span> <span class="token keyword">else</span> <span class="token string">'晏沈威'</span>
+
+        email <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;请输入发送提醒的邮箱（例如：wsyjlly@foxmai.com）：&quot;</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>receive_email <span class="token operator">=</span> email <span class="token keyword">if</span> email<span class="token operator">!=</span><span class="token string">''</span> <span class="token keyword">else</span> <span class="token string">&quot;wsyjlly@foxmail.com&quot;</span>
+
+        phone_number <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;请输入发送提醒的手机号（例如：13781206061）：&quot;</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>phone_number <span class="token operator">=</span> phone_number <span class="token keyword">if</span> phone_number<span class="token operator">!=</span><span class="token string">''</span> <span class="token keyword">else</span> <span class="token string">&quot;13781206061&quot;</span>
+    <span class="token keyword">def</span> <span class="token function">query_ticket</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>seats<span class="token punctuation">,</span>seat_msg<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>seats<span class="token punctuation">[</span>seat_msg<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token punctuation">(</span>seats<span class="token punctuation">[</span>seat_msg<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">&quot;无&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;无&quot;</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>seat_dict<span class="token punctuation">[</span>seat_msg<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">&quot;座位！&quot;</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token boolean">False</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;查询到&quot;</span><span class="token punctuation">,</span>seats<span class="token punctuation">[</span>seat_msg<span class="token punctuation">]</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>seat_dict<span class="token punctuation">[</span>seat_msg<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">&quot;座位！&quot;</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token boolean">True</span>
+    <span class="token keyword">def</span> <span class="token function">sys_seek_tickets</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+            from_station_name <span class="token operator">=</span> <span class="token string">&quot;郑州&quot;</span>
+            from_station_name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;出发站点(例：郑州):&quot;</span><span class="token punctuation">)</span>
+
+            to_station_name <span class="token operator">=</span> <span class="token string">&quot;开封&quot;</span>
+            to_station_name <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;到达站点(例：开封):&quot;</span><span class="token punctuation">)</span>
+
+            train_date <span class="token operator">=</span> <span class="token string">&quot;2019-02-28&quot;</span>
+            train_date <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;乘车日期(例：2019-02-25):&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;正在为您查询余票信息，请稍等...&quot;</span><span class="token punctuation">)</span>
+            from_station <span class="token operator">=</span> self<span class="token punctuation">.</span>get_city_code<span class="token punctuation">(</span>from_station_name<span class="token punctuation">)</span>
+            to_station <span class="token operator">=</span> self<span class="token punctuation">.</span>get_city_code<span class="token punctuation">(</span>to_station_name<span class="token punctuation">)</span>
+
+            self<span class="token punctuation">.</span>get_ticket_format<span class="token punctuation">(</span>from_station_name<span class="token punctuation">,</span>from_station<span class="token punctuation">,</span>to_station_name<span class="token punctuation">,</span>to_station<span class="token punctuation">,</span>train_date<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;输入'1'可继续查询,输入enter键选择车次！&quot;</span><span class="token punctuation">)</span><span class="token operator">!=</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">:</span> <span class="token keyword">break</span>
+
+        station_train_code <span class="token operator">=</span> <span class="token string">&quot;K464&quot;</span>
+        station_train_code <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;乘车车次(例：K464):&quot;</span><span class="token punctuation">)</span>
+
+        <span class="token comment"># 选择座位类型与车票类型与乘车人姓名</span>
+        self<span class="token punctuation">.</span>select_order_details<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+            seats <span class="token operator">=</span> self<span class="token punctuation">.</span>get_seats<span class="token punctuation">(</span>station_train_code<span class="token punctuation">,</span> from_station<span class="token punctuation">,</span> to_station<span class="token punctuation">,</span> train_date<span class="token punctuation">)</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'第{}次查票！'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>query_seats_count<span class="token punctuation">)</span><span class="token punctuation">,</span>seats<span class="token punctuation">)</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>seatType<span class="token operator">==</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> self<span class="token punctuation">.</span>query_ticket<span class="token punctuation">(</span>seats<span class="token punctuation">,</span><span class="token string">&quot;yz_num&quot;</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">break</span>
+            <span class="token keyword">elif</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>seatType<span class="token operator">==</span><span class="token string">&quot;N&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> self<span class="token punctuation">.</span>query_ticket<span class="token punctuation">(</span>seats<span class="token punctuation">,</span><span class="token string">&quot;wz_num&quot;</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">break</span>
+            <span class="token keyword">elif</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>seatType<span class="token operator">==</span><span class="token string">&quot;2&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> self<span class="token punctuation">.</span>query_ticket<span class="token punctuation">(</span>seats<span class="token punctuation">,</span><span class="token string">&quot;rz_num&quot;</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">break</span>
+            <span class="token keyword">elif</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>seatType<span class="token operator">==</span><span class="token string">&quot;3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> self<span class="token punctuation">.</span>query_ticket<span class="token punctuation">(</span>seats<span class="token punctuation">,</span><span class="token string">&quot;yw_num&quot;</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">break</span>
+            <span class="token keyword">elif</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>seatType<span class="token operator">==</span><span class="token string">&quot;4&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> self<span class="token punctuation">.</span>query_ticket<span class="token punctuation">(</span>seats<span class="token punctuation">,</span><span class="token string">&quot;rw_num&quot;</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">break</span>
+            <span class="token keyword">elif</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>seatType<span class="token operator">==</span><span class="token string">&quot;6&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> self<span class="token punctuation">.</span>query_ticket<span class="token punctuation">(</span>seats<span class="token punctuation">,</span><span class="token string">&quot;gr_num&quot;</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">break</span>
+            <span class="token keyword">elif</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>seatType<span class="token operator">==</span><span class="token string">&quot;0&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> self<span class="token punctuation">.</span>query_ticket<span class="token punctuation">(</span>seats<span class="token punctuation">,</span><span class="token string">&quot;ze_num&quot;</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">break</span>
+            <span class="token keyword">elif</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>seatType<span class="token operator">==</span><span class="token string">&quot;M&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> self<span class="token punctuation">.</span>query_ticket<span class="token punctuation">(</span>seats<span class="token punctuation">,</span><span class="token string">&quot;zy_num&quot;</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">break</span>
+            <span class="token keyword">elif</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>seatType<span class="token operator">==</span><span class="token string">&quot;F&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> self<span class="token punctuation">.</span>query_ticket<span class="token punctuation">(</span>seats<span class="token punctuation">,</span><span class="token string">&quot;dw_num&quot;</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">break</span>
+            <span class="token keyword">elif</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>seatType<span class="token operator">==</span><span class="token string">&quot;9&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> self<span class="token punctuation">.</span>query_ticket<span class="token punctuation">(</span>seats<span class="token punctuation">,</span><span class="token string">&quot;swz_num&quot;</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">break</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token keyword">raise</span> Exception<span class="token punctuation">(</span><span class="token string">&quot;没有相应车次！&quot;</span><span class="token punctuation">)</span>
+                <span class="token keyword">break</span>
+            self<span class="token punctuation">.</span>query_seats_count<span class="token operator">+=</span><span class="token number">1</span>
+            time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+
+        <span class="token comment"># 获取相应车次的secret_str</span>
+        secret_str <span class="token operator">=</span> self<span class="token punctuation">.</span>get_secret_str<span class="token punctuation">(</span>from_station<span class="token punctuation">,</span> to_station<span class="token punctuation">,</span> train_date<span class="token punctuation">)</span><span class="token punctuation">[</span>station_train_code<span class="token punctuation">]</span>
+        <span class="token comment"># print(secret_str)</span>
+        result <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        result<span class="token punctuation">[</span><span class="token string">&quot;from_station&quot;</span><span class="token punctuation">]</span><span class="token operator">=</span>from_station
+        result<span class="token punctuation">[</span><span class="token string">&quot;to_station&quot;</span><span class="token punctuation">]</span><span class="token operator">=</span>to_station
+        result<span class="token punctuation">[</span><span class="token string">&quot;train_date&quot;</span><span class="token punctuation">]</span><span class="token operator">=</span>train_date
+        result<span class="token punctuation">[</span><span class="token string">&quot;secret_str&quot;</span><span class="token punctuation">]</span><span class="token operator">=</span>secret_str
+        <span class="token keyword">return</span> result
+
+
+
+
+
+
+
+
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;
+        订单模块：
+            1、注入起始点、日期，车次码信息，提交请求，返回状态信息
+            2、获取该车次的详细信息，选择车票类型
+            3、获取所有已添加乘客
+            4、选择乘车乘客
+            5、检查订单信息
+            6、确认订单信息，占座成功，下单完成
+            7、发送邮件，短信，提醒支付
+    &quot;&quot;&quot;</span>
+    <span class="token comment"># {'validateMessagesShowId': '_validatorMessage', 'status': True, 'httpstatus': 200, 'data': 'N', 'messages': [], 'validateMessages': {}}</span>
+    <span class="token keyword">def</span> <span class="token function">get_train_number</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>tickets<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        secret_str <span class="token operator">=</span> parse<span class="token punctuation">.</span>unquote<span class="token punctuation">(</span>tickets<span class="token punctuation">[</span><span class="token string">&quot;secret_str&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        from_station <span class="token operator">=</span> tickets<span class="token punctuation">[</span><span class="token string">&quot;from_station&quot;</span><span class="token punctuation">]</span>
+        to_station <span class="token operator">=</span> tickets<span class="token punctuation">[</span><span class="token string">&quot;to_station&quot;</span><span class="token punctuation">]</span>
+        train_date <span class="token operator">=</span> tickets<span class="token punctuation">[</span><span class="token string">&quot;train_date&quot;</span><span class="token punctuation">]</span>
+        req <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span><span class="token string">'https://kyfw.12306.cn/otn/leftTicket/submitOrderRequest'</span><span class="token punctuation">)</span>
+        req<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        data <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;secretStr&quot;</span><span class="token punctuation">:</span> secret_str<span class="token punctuation">,</span>
+            <span class="token string">&quot;train_date&quot;</span><span class="token punctuation">:</span> train_date<span class="token punctuation">,</span>
+            <span class="token string">&quot;back_train_date&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;tour_flag&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;dc&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;purpose_codes&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ADULT&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;query_from_station_name&quot;</span><span class="token punctuation">:</span> from_station<span class="token punctuation">,</span>
+            <span class="token string">&quot;query_to_station_name&quot;</span><span class="token punctuation">:</span> to_station<span class="token punctuation">,</span>
+            <span class="token string">&quot;undefined&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+        data <span class="token operator">=</span> parse<span class="token punctuation">.</span>urlencode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> loads<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    <span class="token comment"># 获取相应车次的信息</span>
+    <span class="token keyword">def</span> <span class="token function">get_train_number_msg</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        req <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span><span class="token string">'https://kyfw.12306.cn/otn/confirmPassenger/initDc'</span><span class="token punctuation">)</span>
+        req<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        data <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;_json_att&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+        <span class="token punctuation">}</span>
+        data <span class="token operator">=</span> parse<span class="token punctuation">.</span>urlencode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 返回登录结果</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            ticketInfoForPassengerForm <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">&quot;var ticketInfoForPassengerForm=(.*?);&quot;</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">&quot;'&quot;</span><span class="token punctuation">,</span> <span class="token string">'&quot;'</span><span class="token punctuation">)</span>
+            globalRepeatSubmitToken <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">&quot;globalRepeatSubmitToken = '(.*?)'&quot;</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+            key_check_isChange <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">&quot;'key_check_isChange':'(.*?)'&quot;</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        <span class="token keyword">except</span><span class="token punctuation">:</span>
+            <span class="token keyword">raise</span> Exception<span class="token punctuation">(</span><span class="token string">&quot;没有获取到车次信息！&quot;</span><span class="token punctuation">)</span>
+        ticketInfoForPassengerForm <span class="token operator">=</span> loads<span class="token punctuation">(</span>ticketInfoForPassengerForm<span class="token punctuation">)</span>
+        leftDetails <span class="token operator">=</span> ticketInfoForPassengerForm<span class="token punctuation">[</span><span class="token string">&quot;leftDetails&quot;</span><span class="token punctuation">]</span>
+        leftTicketStr <span class="token operator">=</span> ticketInfoForPassengerForm<span class="token punctuation">[</span><span class="token string">&quot;leftTicketStr&quot;</span><span class="token punctuation">]</span>
+        purpose_codes <span class="token operator">=</span> ticketInfoForPassengerForm<span class="token punctuation">[</span><span class="token string">&quot;queryLeftTicketRequestDTO&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;purpose_codes&quot;</span><span class="token punctuation">]</span>
+        train_location <span class="token operator">=</span> ticketInfoForPassengerForm<span class="token punctuation">[</span><span class="token string">&quot;train_location&quot;</span><span class="token punctuation">]</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;该车次剩余车票详情如下:&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> item <span class="token keyword">in</span> leftDetails<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;\t&quot;</span><span class="token punctuation">,</span>item<span class="token punctuation">)</span>
+        msg_order_finally_submit <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        msg_order_finally_submit<span class="token punctuation">[</span><span class="token string">&quot;purpose_codes&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> purpose_codes
+        msg_order_finally_submit<span class="token punctuation">[</span><span class="token string">&quot;key_check_isChange&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> key_check_isChange
+        msg_order_finally_submit<span class="token punctuation">[</span><span class="token string">&quot;leftTicketStr&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> leftTicketStr
+        msg_order_finally_submit<span class="token punctuation">[</span><span class="token string">&quot;train_location&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> train_location
+        msg_order_finally_submit<span class="token punctuation">[</span><span class="token string">&quot;token&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> globalRepeatSubmitToken
+
+        <span class="token keyword">return</span> msg_order_finally_submit
+    <span class="token comment"># 获取所有已添加乘客</span>
+    <span class="token keyword">def</span> <span class="token function">get_passengers</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>token<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        req <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span><span class="token string">'https://kyfw.12306.cn/otn/confirmPassenger/getPassengerDTOs'</span><span class="token punctuation">)</span>
+        req<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        data <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;_json_att&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;REPEAT_SUBMIT_TOKEN&quot;</span><span class="token punctuation">:</span> token
+        <span class="token punctuation">}</span>
+        data <span class="token operator">=</span> parse<span class="token punctuation">.</span>urlencode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 返回登录结果</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        result <span class="token operator">=</span> loads<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+        normal_passengers <span class="token operator">=</span> result<span class="token punctuation">[</span><span class="token string">&quot;data&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;normal_passengers&quot;</span><span class="token punctuation">]</span>
+        result <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        <span class="token comment"># print(&quot;已添加的乘车人如下：&quot;)</span>
+        <span class="token keyword">for</span> passenger <span class="token keyword">in</span> normal_passengers<span class="token punctuation">:</span>
+            result<span class="token punctuation">[</span>passenger<span class="token punctuation">[</span><span class="token string">&quot;passenger_name&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> passenger
+            <span class="token comment"># if passenger != normal_passengers[len(normal_passengers) - 1]:</span>
+            <span class="token comment">#     print(passenger[&quot;passenger_name&quot;] + &quot;,&quot;, end='')</span>
+            <span class="token comment"># else:</span>
+            <span class="token comment">#     print(passenger[&quot;passenger_name&quot;])</span>
+        <span class="token keyword">return</span> result
+    <span class="token comment"># 选择乘车人</span>
+    <span class="token keyword">def</span> <span class="token function">select_passenger</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>passengers<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        ps <span class="token operator">=</span> self<span class="token punctuation">.</span>passengers_name
+        oldPassengerStr <span class="token operator">=</span> <span class="token string">''</span>
+        passengerTicketStr <span class="token operator">=</span> <span class="token string">''</span>
+        seatType <span class="token operator">=</span> <span class="token number">1</span> <span class="token keyword">if</span> self<span class="token punctuation">.</span>seatType <span class="token operator">==</span><span class="token string">&quot;N&quot;</span> <span class="token keyword">else</span> self<span class="token punctuation">.</span>seatType
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            ps <span class="token operator">=</span> ps<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">&quot;,&quot;</span><span class="token punctuation">)</span>
+            <span class="token keyword">for</span> p <span class="token keyword">in</span> ps<span class="token punctuation">:</span>
+                oldPassengerStr <span class="token operator">+=</span> passengers<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;passenger_name&quot;</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot;,&quot;</span> <span class="token operator">+</span> \
+                                   passengers<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;passenger_id_type_code&quot;</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot;,&quot;</span> <span class="token operator">+</span> \
+                                   passengers<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;passenger_id_no&quot;</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot;,&quot;</span> <span class="token operator">+</span> \
+                                   passengers<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;passenger_type&quot;</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot;_&quot;</span>
+                <span class="token comment"># seatType 座位类型：硬座1软座2硬卧3软卧4</span>
+                <span class="token comment"># passenger_flag 乘客标记：0</span>
+                <span class="token comment"># ticketType 车票类型： 成人票1儿童票2学生票3残军票4</span>
+                <span class="token comment"># passenger_name 乘客姓名</span>
+                <span class="token comment"># passenger_id_type_code 证件类型 中国居民身份证1</span>
+                <span class="token comment"># passenger_id_no 身份证号</span>
+                <span class="token comment"># mobile_no 手机号</span>
+                ticketStr <span class="token operator">=</span> <span class="token string">&quot;{},{},{},{},{},{},{},N&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>seatType<span class="token punctuation">,</span>
+                                                            passengers<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;passenger_flag&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                                                            self<span class="token punctuation">.</span>ticketType<span class="token punctuation">,</span>
+                                                            passengers<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;passenger_name&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                                                            passengers<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;passenger_id_type_code&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                                                            passengers<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;passenger_id_no&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                                                            passengers<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">&quot;mobile_no&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                passengerTicketStr <span class="token operator">+=</span> ticketStr <span class="token operator">+</span> <span class="token string">'_'</span> <span class="token keyword">if</span> p <span class="token operator">!=</span> ps<span class="token punctuation">[</span><span class="token builtin">len</span><span class="token punctuation">(</span>ps<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token keyword">else</span> ticketStr
+        <span class="token keyword">except</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;输入有误！&quot;</span><span class="token punctuation">)</span>
+        result <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        result<span class="token punctuation">[</span><span class="token string">&quot;oldPassengerStr&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> oldPassengerStr
+        result<span class="token punctuation">[</span><span class="token string">&quot;passengerTicketStr&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> passengerTicketStr
+        <span class="token keyword">return</span> result
+    <span class="token comment"># 检查订单信息</span>
+    <span class="token keyword">def</span> <span class="token function">order_submit</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>msg_passenger<span class="token punctuation">,</span> token<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        req <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span><span class="token string">'https://kyfw.12306.cn/otn/confirmPassenger/checkOrderInfo'</span><span class="token punctuation">)</span>
+        req<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        data <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;cancel_flag&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;2&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;bed_level_order_num&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;000000000000000000000000000000&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;passengerTicketStr&quot;</span><span class="token punctuation">:</span> msg_passenger<span class="token punctuation">[</span><span class="token string">&quot;passengerTicketStr&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;oldPassengerStr&quot;</span><span class="token punctuation">:</span> msg_passenger<span class="token punctuation">[</span><span class="token string">&quot;oldPassengerStr&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;tour_flag&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;dc&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;randCode&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;whatsSelect&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;_json_att&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;REPEAT_SUBMIT_TOKEN&quot;</span><span class="token punctuation">:</span> token
+        <span class="token punctuation">}</span>
+        data <span class="token operator">=</span> parse<span class="token punctuation">.</span>urlencode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 返回登录结果</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> loads<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    <span class="token comment"># 确认订单</span>
+    <span class="token keyword">def</span> <span class="token function">order_ensure</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>msg_passenger<span class="token punctuation">,</span>train_number_msg<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        purpose_codes <span class="token operator">=</span> train_number_msg<span class="token punctuation">[</span><span class="token string">&quot;purpose_codes&quot;</span><span class="token punctuation">]</span>
+        key_check_isChange <span class="token operator">=</span> train_number_msg<span class="token punctuation">[</span><span class="token string">&quot;key_check_isChange&quot;</span><span class="token punctuation">]</span>
+        leftTicketStr <span class="token operator">=</span> train_number_msg<span class="token punctuation">[</span><span class="token string">&quot;leftTicketStr&quot;</span><span class="token punctuation">]</span>
+        train_location <span class="token operator">=</span> train_number_msg<span class="token punctuation">[</span><span class="token string">&quot;train_location&quot;</span><span class="token punctuation">]</span>
+        token <span class="token operator">=</span> train_number_msg<span class="token punctuation">[</span><span class="token string">&quot;token&quot;</span><span class="token punctuation">]</span>
+        req <span class="token operator">=</span> request<span class="token punctuation">.</span>Request<span class="token punctuation">(</span><span class="token string">'https://kyfw.12306.cn/otn/confirmPassenger/confirmSingleForQueue'</span><span class="token punctuation">)</span>
+        req<span class="token punctuation">.</span>headers <span class="token operator">=</span> self<span class="token punctuation">.</span>headers
+        data <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;passengerTicketStr&quot;</span><span class="token punctuation">:</span> msg_passenger<span class="token punctuation">[</span><span class="token string">&quot;passengerTicketStr&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;oldPassengerStr&quot;</span><span class="token punctuation">:</span> msg_passenger<span class="token punctuation">[</span><span class="token string">&quot;oldPassengerStr&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;randCode&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;purpose_codes&quot;</span><span class="token punctuation">:</span> purpose_codes<span class="token punctuation">,</span>
+            <span class="token string">&quot;key_check_isChange&quot;</span><span class="token punctuation">:</span> key_check_isChange<span class="token punctuation">,</span>
+            <span class="token string">&quot;leftTicketStr&quot;</span><span class="token punctuation">:</span> leftTicketStr<span class="token punctuation">,</span>
+            <span class="token string">&quot;train_location&quot;</span><span class="token punctuation">:</span> train_location<span class="token punctuation">,</span>
+            <span class="token string">&quot;choose_seats&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;seatDetailType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;000&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;whatsSelect&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;roomType&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;00&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;dwAll&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;N&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;_json_att&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;REPEAT_SUBMIT_TOKEN&quot;</span><span class="token punctuation">:</span> token
+        <span class="token punctuation">}</span>
+        data <span class="token operator">=</span> parse<span class="token punctuation">.</span>urlencode<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 返回登录结果</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>opener<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> loads<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    <span class="token comment"># 发送email</span>
+    <span class="token keyword">def</span> <span class="token function">send_email</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 第三方SMTP服务</span>
+        mail_host <span class="token operator">=</span> <span class="token string">&quot;smtp.qq.com&quot;</span>
+        mail_user <span class="token operator">=</span> <span class="token string">&quot;*******@foxmail.com&quot;</span>
+        mail_pass <span class="token operator">=</span> <span class="token string">&quot;****************&quot;</span>
+
+        sender <span class="token operator">=</span> <span class="token string">&quot;wsyjlly@foxmail.com&quot;</span>
+        receiver <span class="token operator">=</span> self<span class="token punctuation">.</span>receive_email
+
+        message <span class="token operator">=</span> MIMEText<span class="token punctuation">(</span><span class="token string">&quot;席位已锁定，快去支付！&quot;</span><span class="token punctuation">)</span>
+        message<span class="token punctuation">[</span><span class="token string">&quot;From&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> sender
+        message<span class="token punctuation">[</span><span class="token string">&quot;To&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> receiver
+        message<span class="token punctuation">[</span><span class="token string">&quot;Subject&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;Python 12306 抢票！&quot;</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            server <span class="token operator">=</span> smtplib<span class="token punctuation">.</span>SMTP<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            server<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>mail_host<span class="token punctuation">)</span>
+            server<span class="token punctuation">.</span>login<span class="token punctuation">(</span>mail_user<span class="token punctuation">,</span> mail_pass<span class="token punctuation">)</span>
+            server<span class="token punctuation">.</span>sendmail<span class="token punctuation">(</span>sender<span class="token punctuation">,</span> receiver<span class="token punctuation">,</span> message<span class="token punctuation">.</span>as_string<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            server<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;邮件发送成功，已提醒用户&quot;</span><span class="token punctuation">,</span>receiver<span class="token punctuation">,</span><span class="token string">&quot;付款!&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;邮件发送失败!&quot;</span><span class="token punctuation">,</span> e<span class="token punctuation">)</span>
+    <span class="token comment"># 发送短信</span>
+    <span class="token keyword">def</span> <span class="token function">send_short_message</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        name <span class="token operator">=</span> self<span class="token punctuation">.</span>username
+        phone_number <span class="token operator">=</span> self<span class="token punctuation">.</span>phone_number
+        seat_type <span class="token operator">=</span> self<span class="token punctuation">.</span>seatTypes<span class="token punctuation">[</span>self<span class="token punctuation">.</span>seatType<span class="token punctuation">]</span>
+        ticketType <span class="token operator">=</span> self<span class="token punctuation">.</span>ticketTypes<span class="token punctuation">[</span>self<span class="token punctuation">.</span>ticketType<span class="token punctuation">]</span>
+        appid <span class="token operator">=</span> <span class="token number">1400</span><span class="token operator">**</span><span class="token operator">**</span><span class="token operator">**</span>  <span class="token comment"># SDK AppID是1400开头</span>
+        appkey <span class="token operator">=</span> <span class="token string">&quot;********************************&quot;</span>
+        phone_numbers <span class="token operator">=</span> <span class="token punctuation">[</span>phone_number<span class="token punctuation">]</span>
+        <span class="token comment"># phone_numbers = [&quot;13781206061&quot;, &quot;18337735150&quot;, &quot;15660039893&quot;]</span>
+        template_id <span class="token operator">=</span> <span class="token operator">**</span><span class="token operator">**</span><span class="token operator">**</span>
+        sms_sign <span class="token operator">=</span> <span class="token string">&quot;简单点网&quot;</span>
+
+        ssender <span class="token operator">=</span> SmsSingleSender<span class="token punctuation">(</span>appid<span class="token punctuation">,</span> appkey<span class="token punctuation">)</span>
+        params <span class="token operator">=</span> <span class="token punctuation">[</span>name<span class="token punctuation">,</span>ticketType<span class="token punctuation">,</span>seat_type<span class="token punctuation">]</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            result <span class="token operator">=</span> ssender<span class="token punctuation">.</span>send_with_param<span class="token punctuation">(</span><span class="token number">86</span><span class="token punctuation">,</span> phone_numbers<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> template_id<span class="token punctuation">,</span> params<span class="token punctuation">,</span> sign<span class="token operator">=</span>sms_sign<span class="token punctuation">,</span> extend<span class="token operator">=</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>ext<span class="token operator">=</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span> HTTPError <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+        <span class="token keyword">except</span> Exception <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+        <span class="token comment"># print(result)</span>
+        <span class="token keyword">if</span> result<span class="token punctuation">[</span><span class="token string">&quot;errmsg&quot;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">&quot;OK&quot;</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;短信发送成功，已提醒用户&quot;</span><span class="token punctuation">,</span> name<span class="token punctuation">,</span> <span class="token string">&quot;付款!&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">sys_order</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>tickets<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 1、注入起始点、日期，车次码信息，提交请求，返回状态信息</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>get_train_number<span class="token punctuation">(</span>tickets<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> result<span class="token punctuation">[</span><span class="token string">&quot;status&quot;</span><span class="token punctuation">]</span><span class="token operator">==</span><span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;查询车次信息成功!&quot;</span><span class="token punctuation">)</span>
+        <span class="token comment"># 2、获取该车次的详细信息</span>
+        train_number_msg <span class="token operator">=</span> self<span class="token punctuation">.</span>get_train_number_msg<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 3、获取乘客信息</span>
+        passengers <span class="token operator">=</span> self<span class="token punctuation">.</span>get_passengers<span class="token punctuation">(</span>train_number_msg<span class="token punctuation">[</span><span class="token string">&quot;token&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token comment"># 4、选择乘客</span>
+        msg_passenger <span class="token operator">=</span> self<span class="token punctuation">.</span>select_passenger<span class="token punctuation">(</span>passengers<span class="token punctuation">)</span>
+        <span class="token comment"># print(msg_passenger)</span>
+        <span class="token comment"># 5、下单</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>order_submit<span class="token punctuation">(</span>msg_passenger<span class="token punctuation">,</span> train_number_msg<span class="token punctuation">[</span><span class="token string">&quot;token&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> result<span class="token punctuation">[</span><span class="token string">&quot;status&quot;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token boolean">True</span> <span class="token punctuation">:</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;检查订单信息正确，即将确认订单!&quot;</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">print</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">'%Y-%m-%d %H:%M:%S'</span><span class="token punctuation">,</span>time<span class="token punctuation">.</span>localtime<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token comment"># 6、确认订单</span>
+        result <span class="token operator">=</span> self<span class="token punctuation">.</span>order_ensure<span class="token punctuation">(</span>msg_passenger<span class="token punctuation">,</span> train_number_msg<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> result<span class="token punctuation">[</span><span class="token string">&quot;status&quot;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token boolean">True</span> <span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">'%Y-%m-%d %H:%M:%S'</span><span class="token punctuation">,</span> time<span class="token punctuation">.</span>localtime<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;：下单成功，已占座，请尽快付款!&quot;</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>send_email<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>send_short_message<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># print(result)</span>
+        <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">&quot;按任意键继续！&quot;</span><span class="token punctuation">)</span>
+
+
+
+
+
+
+
+
+
+
+
+    <span class="token keyword">def</span> <span class="token function">run</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 验证码验证</span>
+        self<span class="token punctuation">.</span>sys_verify<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 登录</span>
+        self<span class="token punctuation">.</span>sys_login<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 查余票</span>
+        tickets <span class="token operator">=</span> self<span class="token punctuation">.</span>sys_seek_tickets<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment"># 下订单</span>
+        self<span class="token punctuation">.</span>sys_order<span class="token punctuation">(</span>tickets<span class="token punctuation">)</span>
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+        train_ticket_purchase<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/Other/CentOS 7.html">
+          CentOS 7
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.2d4845b5.js" defer></script><script src="/assets/js/2.974af1fb.js" defer></script><script src="/assets/js/18.b0600c14.js" defer></script>
+  </body>
+</html>
