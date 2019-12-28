@@ -1,0 +1,692 @@
+```
+docker run -it --na
+
+me demo01 -p:8080:8080 demo01:1.0
+file:/ysw/demo01.jar!/BOOT-INF/classes!/uploadFile/
+/tmp/tomcat-docbase.1698214305800799626.8080/uploadFile/
+
+npm镜像
+http://r.cnpmjs.org/
+vue init webpack vue-sfow --registry http://r.cnpmjs.org/
+ --registry https://registry.npm.taobao.org
+2、持久使用
+npm config set registry http://r.cnpmjs.org/
+// 配置后可通过下面方式来验证是否成功
+npm config get registry
+// 或
+npm info express
+
+
+
+Redis安装
+docker pull redis:4.0
+docker run -p 6379:6379 -v /ysw/redis/data:/data -d redis:4.0 redis-server --appendonly yes --requirepass "root@234"
+
+docker run --name="redis01" -p 6379:6379 -v /ysw/redis/data:/data -d redis:4.0 redis-server --appendonly yes --requirepass "root@234"
+
+
+docker exec -it redis01 redis-cli -h 127.0.0.1 -p 6379 -a root@234
+docker exec -it demo01 /bin/bash
+
+
+创建目录：mkdir(make directories)
+功能说明：建立目录 
+语　　法：mkdir [-p][--help][--version][-m <目录属性>][目录名称]
+补充说明：mkdir可建立目录并同时设置目录的权限。
+参　　数：
+  -m<目录属性>或–mode<目录属性>   建立目录时同时设置目录的权限。
+  -p或–parents   若所要建立目录的上层目录目前尚未建立，则会一并建立上层目录。
+例：mkdir  test
+
+
+创建文件 touch
+功能说明：改变文件或目录时间。
+语　　法：touch [-acfm][-d <日期时间>][-r <参考文件或目 录>][-t <日期时间>] [--help]　　 [--version][文件或目录...] 或 touch [-acfm][--help][--version][日期时 间][文件或目录...] 
+补充说明：使用touch指令可更改文件或目录的日期时间，包括存取时间和更改时间。
+参　　数：
+　-a或–time=atime或–time=access或–time=use 　只更改存取时间。 
+　-c或–no-create 　不建立任何文件。 
+　-d<时间日期> 　使用指定的日期时间，而非现在的时间。 
+　-f 　此参数将忽略不予处理，仅负责解决BSD版本touch指令的兼容性问题。 
+　-m或–time=mtime或–time=modify 　只更改变动时间。 
+　-r<参考文件或目录> 　把指定文件或目录的日期时间，统统设成和参考文件或目录的日期时间相同。 
+　-t<日期时间> 　使用指定的日期时间，而非现在的时间。
+
+
+//删除目录、文件 rm(remove)
+功能说明：删除文件或目录。
+语　　法：rm [-dfirv][--help][--version][文件或目录...]
+补充说明：执行rm指令可删除文件或目录，如欲删除目录必须加上参数”-r”，否则预设仅会删除文件。 
+参　　数：
+　-d或–directory 　直接把欲删除的目录的硬连接数据删成0，删除该目录。 
+　-f或–force 　强制删除文件或目录。 
+　-i或–interactive 　删除既有文件或目录之前先询问用户。 
+　-r或-R或–recursive 　递归处理，将指定目录下的所有文件及子目录一并处理。 
+　-v或–verbose 　显示指令执行过程。 
+
+
+
+
+
+Linux默认根目录文件夹
+================================================================
+bin   dev  home  lib64  media  opt   root  sbin  sys  usr
+boot  etc  lib   lost+found  mnt    proc  run   srv   tmp  var
+================================================================
+lrwxrwxrwx.  1 root root     7 Feb 15 17:22 bin -> usr/bin
+dr-xr-xr-x.  5 root root  4096 Feb 15 17:27 boot
+drwxr-xr-x  19 root root  2960 Jun 16 09:37 dev
+drwxr-xr-x. 83 root root  4096 Jun 17 11:30 etc
+drwxr-xr-x.  2 root root  4096 Apr 11  2018 home
+lrwxrwxrwx.  1 root root     7 Feb 15 17:22 lib -> usr/lib
+lrwxrwxrwx.  1 root root     9 Feb 15 17:22 lib64 -> usr/lib64
+drwx------.  2 root root 16384 Feb 15 17:22 lost+found
+drwxr-xr-x.  2 root root  4096 Apr 11  2018 media
+drwxr-xr-x.  2 root root  4096 Apr 11  2018 mnt
+drwxr-xr-x.  2 root root  4096 Apr 11  2018 opt
+dr-xr-xr-x  90 root root     0 Jun 16 09:37 proc
+dr-xr-x---.  6 root root  4096 Jun 17 12:43 root
+drwxr-xr-x  27 root root   840 Jun 17 12:44 run
+lrwxrwxrwx.  1 root root     8 Feb 15 17:22 sbin -> usr/sbin
+drwxr-xr-x.  2 root root  4096 Apr 11  2018 srv
+dr-xr-xr-x  13 root root     0 Jun 16 09:38 sys
+drwxrwxrwt. 10 root root  4096 Jun 17 12:44 tmp
+drwxr-xr-x. 13 root root  4096 Jun 16 09:49 usr
+drwxr-xr-x. 19 root root  4096 Feb 15 09:26 var
+================================================================
+
+
+tomcat设置软链接
+ln -s /usr/local/tomcat/bin/shutdown.sh /tomcat0
+ln -s /usr/local/tomcat/bin/catalina.sh /tomcat1
+ln -s /usr/local/tomcat/bin/startup.sh /tomcat2
+
+CentOS 7 防火墙操作
+systemctl stop firewalld
+systemctl start firewalld
+systemctl status firewalld
+systemctl enable firewalld
+systemctl disable firewalld
+
+
+SELinux激活
+查看状态
+sestatus  SELinux status:
+编辑/etc/selinux/config文件
+先将SELinux的值设置为permissive，reboot后，执行下列命令：
+genhomedircon
+touch /.autorelabel
+reboot
+标记完成后再设置为enforcing，reboot
+
+
+查看当前firewall状态
+firewall-cmd --state
+重启firewall
+firewall-cmd --reload
+firewall-cmd --list-ports
+开启端口
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+
+
+
+
+ [aliyunzixun@xxx.com /]# systemctl status vsftpd.service
+#激活vsftpd服务
+ [aliyunzixun@xxx.com /]# systemctl start vsftpd.service
+#设置vsftpd服务开机自启
+ [aliyunzixun@xxx.com /]#systemctl enable vsftpd.service
+查看开机启动项
+systemctl list-unit-files
+systemctl list-unit-files | grep vsftpd
+
+
+
+
+[mysql]
+# 设置mysql客户端默认字符集
+default-character-set=utf8
+socket=/var/lib/mysql/mysql.sock
+[mysqld]
+skip-name-resolve
+#设置3306端口
+port = 3306
+socket=/var/lib/mysql/mysql.sock
+# 设置mysql的安装目录
+basedir=/usr/local/mysql
+# 设置mysql数据库的数据的存放目录
+datadir=/usr/local/mysql/data
+# 允许最大连接数
+max_connections=200
+# 服务端使用的字符集默认为8比特编码的latin1字符集
+character-set-server=utf8
+# 创建新表时将使用的默认存储引擎
+default-storage-engine=INNODB
+lower_case_table_name=1
+max_allowed_packet=16M
+
+
+
+
+
+
+
+查看mysql已安装的文件
+ rpm -qa |grep -i mysql
+卸载mysql
+ yum remove mysql57-community-release-el7-8.noarch
+ 查找mysql
+find / -name mysql
+删除mysql文件夹
+rm /usr/local/mysql -rf
+
+
+#防火墙添加80端口:
+firewall-cmd --zone=public --add-port=8081/tcp --permanent
+这样就成功的将8081端口加入了public区域中，permanent参数表示永久生效，即重启也不会失效，最后不要忘记更新防火墙规则：
+firewall-cmd --reload
+OK，下面看一下public区域下所有已打开的端口，命令如下：
+firewall-cmd --zone=public --list-ports
+
+
+#防火墙添加FTP服务:
+[aliyunzixun@xxx.com vsftpd]#firewall-cmd --permanent --zone=public --add-service=ftp
+[aliyunzixun@xxx.com vsftpd]#firewall-cmd --reload
+#设置SELinux:
+[aliyunzixun@xxx.com vsftpd]#getsebool -a | grep ftp
+[aliyunzixun@xxx.com vsftpd]#setsebool -P ftpd_full_access on
+
+
+***********************yum安装wget***********************
+yum -y install wget
+yum -y install vsftpd
+
+
+rpm本地安装
+
+
+
+
+
+***********************vsftpd安装好后用root登录不进去***********************
+cat /etc/vsftpd/user_list
+cat /etc/vsftpd/ftpusers
+将
+root
+改为
+# root
+:wq保存
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+查看虚拟机里的Centos7的IP
+这里之所以是查看下IP ，是我们后面要建一个Centos远程工具Xshell 连接Centos的时候，需要IP地址，所以我们这里先
+学会查看虚拟机里的Centos7的IP地址
+首先我们登录操作系统 用户名root 密码 123456
+然后我们输入ip查询命名 ip addr  也可以输入 ifconfig查看ip，但此命令会出现3个条目，centos的ip地址是ens33条目中的inet值。
+发现 ens33 没有 inet 这个属性，那么就没法通过IP地址连接虚拟机。
+
+
+接着来查看ens33网卡的配置： vi /etc/sysconfig/network-scripts/ifcfg-ens33   注意vi后面加空格
+vi是Linux内置的文本编辑器命令 打开文件的意思
+从配置清单中可以发现 CentOS 7 默认是不启动网卡的（ONBOOT=no）。
+把这一项改为YES（ONBOOT=yes）
+然后按 Esc 退出  再出入命令 :wq  再按Enter即可  （备注 :wq 是保存然后退出的意思 后面会专门讲下vi）
+
+
+
+然后重启网络服务： sudo service network restart 
+
+然后我们再输入  ip addr 命令
+这里 inet属性显示了 虚拟机里的IP  192.168.1.107  (你们的可能和我不一样)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+linux 安装jdk 1.7 64位和配置
+检查是否存在
+java -version
+
+如果存在就删除
+否则下载一个
+wget http://download.oracle.com/otn-pub/java/jdk/7u3-b04/jdk-7u3-linux-x64.rpm(注意jdk版本，此下载版本非下面安装版本)
+
+添加权限
+chmod 777 jdk-7u80-linux-x64.rpm
+
+运行安装
+rpm -ivh jdk-7u80-linux-x64.rpm
+
+找到
+[root@localhost~]# cd /etc 
+[root@localhost etc]# vi profile 
+
+添加到最后一行
+JAVA_HOME=/usr/java/jdk1.7.0_80
+PATH=$JAVA_HOME/bin:$PATH
+CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export JAVA_HOME
+export PATH
+export CLASSPATH  
+
+输入:wq保存并退出，然后再重启CentOS 6系统
+
+输入
+shutdown -r now  
+
+让系统配置立即生效，不用重启系统
+终端输入命令：source /etc/profile
+注意：如果出现以下错误信息
+bash: /usr/java/jdk1.7.0_80/lib/dt.jar: 权限不够
+bash: /usr/java/jdk1.7.0_80/lib/tools.jar: 权限不够
+
+重新启动系统后，输入java -version查看是否成功
+java -version
+
+
+
+
+
+
+
+
+
+
+
+
+CentOS7 常用命令集合
+
+文件与目录操作
+命令      解析
+cd /home        进入 ‘/home’ 目录
+cd ..   返回上一级目录
+cd ../..        返回上两级目录
+cd -    返回上次所在目录
+cp file1 file2  将file1复制为file2
+cp -a dir1 dir2         复制一个目录
+cp -a /tmp/dir1 .       复制一个目录到当前工作目录（.代表当前目录）
+ls      查看目录中的文件
+ls -a   显示隐藏文件
+ls -l   显示详细信息
+ls -lrt         按时间显示文件（l表示详细列表，r表示反向排序，t表示按时间排序）
+pwd     显示工作路径
+mkdir dir1      创建 ‘dir1’ 目录
+mkdir dir1 dir2         同时创建两个目录
+mkdir -p /tmp/dir1/dir2         创建一个目录树
+mv dir1 dir2    移动/重命名一个目录
+rm -f file1     删除 ‘file1’
+rm -rf dir1     删除 ‘dir1’ 目录及其子目录内容
+
+
+
+查看文件内容
+命令      解析
+cat file1       从第一个字节开始正向查看文件的内容
+head -2 file1   查看一个文件的前两行
+more file1      查看一个长文件的内容
+tac file1       从最后一行开始反向查看一个文件的内容
+tail -3 file1   查看一个文件的最后三行
+vi file         打开并浏览文件
+
+
+
+
+文本内容处理
+命令      解析
+grep str /tmp/test      在文件 ‘/tmp/test’ 中查找 “str”
+grep ^str /tmp/test     在文件 ‘/tmp/test’ 中查找以 “str” 开始的行
+grep [0-9] /tmp/test    查找 ‘/tmp/test’ 文件中所有包含数字的行
+grep str -r /tmp/*      在目录 ‘/tmp’ 及其子目录中查找 “str”
+diff file1 file2        找出两个文件的不同处
+sdiff file1 file2       以对比的方式显示两个文件的不同
+vi file         
+操作      解析
+i       进入编辑文本模式
+Esc     退出编辑文本模式
+:w      保存当前修改
+:q      不保存退出vi
+:wq     保存当前修改并退出vi
+
+
+
+
+
+查询操作
+命令      解析
+find / -name file1      从 ‘/’ 开始进入根文件系统查找文件和目录
+find / -user user1      查找属于用户 ‘user1’ 的文件和目录
+find /home/user1 -name *.bin    在目录 ‘/ home/user1’ 中查找以 ‘.bin’ 结尾的文件
+find /usr/bin -type f -atime +100       查找在过去100天内未被使用过的执行文件
+find /usr/bin -type f -mtime -10        查找在10天内被创建或者修改过的文件
+locate *.ps     寻找以 ‘.ps’ 结尾的文件，先运行 ‘updatedb’ 命令
+find -name ‘*.[ch]’ | xargs grep -E ‘expr’      在当前目录及其子目录所有.c和.h文件中查找 ‘expr’
+find -type f -print0 | xargs -r0 grep -F ‘expr’         在当前目录及其子目录的常规文件中查找 ‘expr’
+find -maxdepth 1 -type f | xargs grep -F ‘expr’         在当前目录中查找 ‘expr’
+压缩、解压
+命令      解析
+bzip2 file1     压缩 file1
+bunzip2 file1.bz2       解压 file1.bz2
+gzip file1      压缩 file1
+gzip -9 file1   最大程度压缩 file1
+gunzip file1.gz         解压 file1.gz
+tar -cvf archive.tar file1      把file1打包成 archive.tar（-c: 建立压缩档案；-v: 显示所有过程；-f: 使用档案名字，是必须的，是最后一个参数）
+tar -cvf archive.tar file1 dir1         把 file1，dir1 打包成 archive.tar
+tar -tf archive.tar     显示一个包中的内容
+tar -xvf archive.tar    释放一个包
+tar -xvf archive.tar -C /tmp    把压缩包释放到 /tmp目录下
+zip file1.zip file1     创建一个zip格式的压缩包
+zip -r file1.zip file1 dir1     把文件和目录压缩成一个zip格式的压缩包
+unzip file1.zip         解压一个zip格式的压缩包到当前目录
+unzip test.zip -d /tmp/         解压一个zip格式的压缩包到 /tmp 目录
+
+
+
+***********************yum安装器***********************
+yum -y install [package]        下载并安装一个rpm包
+yum localinstall [package.rpm]  安装一个rpm包，使用你自己的软件仓库解决所有依赖关系
+yum -y update   更新当前系统中安装的所有rpm包
+yum update [package]    更新一个rpm包
+yum remove [package]    删除一个rpm包
+yum list        列出当前系统中安装的所有包
+yum search [package]    在rpm仓库中搜寻软件包
+yum clean [package]     清除缓存目录（/var/cache/yum）下的软件包
+yum clean headers       删除所有头文件
+yum clean all   删除所有缓存的包和头文件
+
+
+
+
+
+网络相关
+命令      解析
+ifconfig eth0   显示一个以太网卡的配置
+ifconfig eth0 192.168.1.1 netmask 255.255.255.0         配置网卡的IP地址
+ifdown eth0     禁用 ‘eth0’ 网络设备
+ifup eth0       启用 ‘eth0’ 网络设备
+iwconfig eth1   显示一个无线网卡的配置
+iwlist scan     显示无线网络
+ip addr show    显示网卡的IP地址
+
+
+
+
+系统相关
+命令      解析
+su -    切换到root权限（与su有区别）
+shutdown -h now         关机
+shutdown -r now         重启
+top     罗列使用CPU资源最多的linux任务 （输入q退出）
+pstree  以树状图显示程序
+man ping        查看参考手册（例如ping 命令）
+passwd  修改密码
+df -h   显示磁盘的使用情况
+cal -3  显示前一个月，当前月以及下一个月的月历
+cal 10 1988     显示指定月，年的月历
+date –date ‘1970-01-01 UTC 1427888888 seconds’  把一相对于1970-01-01 00:00的秒数转换成时间
+
+
+
+
+XSheel 5相关操作
+窗体快捷键
+命令      解析
+Ctrl + u        删除光标之前到行首的字符
+Ctrl + k        删除光标之前到行尾的字符
+Ctrl + c        取消当前行输入的命令，相当于Ctrl + Break
+Ctrl + a        光标移动到行首（ahead of line），相当于通常的Home键
+Ctrl + e        光标移动到行尾（end of line）
+Ctrl + f        光标向前（forward）移动一个字符位置
+Ctrl + b        光标往回（backward）移动一个字符位置
+Ctrl + l        清屏，相当于执行clear命令
+Ctrl + r        显示:号提示，根据用户输入查找相关历史命令（reverse-i-search）
+Ctrl + w        删除从光标位置前到当前所处单词（word）的开头
+Ctrl + t        交换光标位置前的两个字符
+Ctrl + y        粘贴最后一次被删除的单词
+Ctrl + Alt + d  显示桌面
+Alt + b         光标往回（backward）移动到前一个单词
+Alt + d         删除从光标位置到当前所处单词的末尾
+Alt + F2        运行
+Alt + F4        关闭当前窗口
+Alt + F9        最小化当前窗口
+Alt + F10       最大化当前窗口
+Alt + Tab       切换窗口
+Alt + 左键        移动窗口（或在最下面的任务栏滚动鼠标滑轮）
+
+
+
+操作小技巧
+鼠标中间键：粘贴突出显示的文本。(使用鼠标左键来选择文本。把光标指向想粘贴文本的地方。点击鼠标中间键来粘贴。)
+Tab：命令行自动补全。使用 shell 提示时可使用这一方式。键入命令或文件名的前几个字符，然后按 [Tab] 键，它会自动补全命令或显示匹配键入字符的所有命令。
+在滚动条的空白处点击鼠标中键：屏幕即滚动到那个地方。
+在桌面或文件管理器中直接按 / 就可以输入位置，打开文件管理器。
+在 vi 或 Firefox 中直接按 / 即可进入快速搜索状态。
+网站链接和图片可直接拖放到桌面或者目录，可以马上下载。
+直接将文件管理器中的文件拖到终端中就可以在终端中得到完整的路径名。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CentOS7种搭建FTP服务器
+如果是在虚拟机中试验的,最好先拍摄快照以免出现错误时恢复 
+1.安装vsftpd#首先要查看你是否安装vsftp [aliyunzixun@xxx.com/]#rpm-qvsftpdvsftpd-3.0.2-10.el7.x86_64 (显示也就安装成功了!)
+#如果没有则安装vsftpd[aliyunzixun@xxx
+如果是在虚拟机中试验的,最好先拍摄快照以免出现错误时恢复
+
+
+1.安装vsftpd
+#首先要查看你是否安装vsftp
+ [aliyunzixun@xxx.com /]# rpm -q vsftpd
+vsftpd-3.0.2-10.el7.x86_64             (显示也就安装成功了!)
+#如果没有则安装vsftpd
+[aliyunzixun@xxx.com/]# yum  install -y  vsftpd
+#完成后再检查一遍
+ [aliyunzixun@xxx.com /]# whereis  vsftpd
+vsftpd:/usr/sbin/vsftpd /etc/vsftpd/usr/share/man/man8/vsftpd
+
+#查看vsftpd服务的状态
+ [aliyunzixun@xxx.com /]# systemctl statusvsftpd.service
+(如果是激活状态的话会有active绿色的标记)
+#激活vsftpd服务
+ [aliyunzixun@xxx.com /]# systemctl startvsftpd.service
+#设置vsftpd服务开机自启
+ [aliyunzixun@xxx.com /]#systemctl enable vsftpd.service
+查看开机启动项
+systemctl list-unit-files
+systemctl list-unit-files | grep vsftpd
+
+
+2. 配置vsftpd.conf
+#首先备份配置文件(必须要备份,以免出现意外时恢复。)
+cp /etc/vsftpd/vsftpd.conf/etc/vsftpd/vsftpd.conf.bak
+
+ 
+
+#执行以下命令(sed  -i 命令相当于直接修改原文件)
+sed -i"s/anonymous_enable=YES/anonymous_enable=NO/g"'/etc/vsftpd/vsftpd.conf'
+sed -i"s/#anon_upload_enable=YES/anon_upload_enable=NO/g"'/etc/vsftpd/vsftpd.conf'
+sed -i"s/#anon_mkdir_write_enable=YES/anon_mkdir_write_enable=YES/g"'/etc/vsftpd/vsftpd.conf'
+sed -i"s/#chown_uploads=YES/chown_uploads=NO/g"'/etc/vsftpd/vsftpd.conf'
+sed -i"s/#async_abor_enable=YES/async_abor_enable=YES/g"'/etc/vsftpd/vsftpd.conf'
+sed -i"s/#ascii_upload_enable=YES/ascii_upload_enable=YES/g"'/etc/vsftpd/vsftpd.conf'
+sed -i"s/#ascii_download_enable=YES/ascii_download_enable=YES/g"'/etc/vsftpd/vsftpd.conf'
+sed -i"s/#ftpd_banner=Welcome to blah FTP service./ftpd_banner=Welcome toFTP service./g"'/etc/vsftpd/vsftpd.conf'
+(其实你也可以直接使用
+vim /etc/vsftpd/vsftpd.conf 进入配置文件修改如下
+anonymous_enable=NO  # 禁用匿名登录
+ascii_upload_enable=YES
+ascii_download_enable=YES
+chroot_local_user=YES  # 启用限定用户在其主目录下
+)
+
+#之后添加下列内容到vsftpd.conf末尾
+use_localtime=YES
+listen_port=21
+chroot_local_user=YES
+idle_session_timeout=300
+guest_enable=YES
+guest_username=vsftpd
+user_config_dir=/etc/vsftpd/vconf
+data_connection_timeout=1
+virtual_use_local_privs=YES
+pasv_min_port=10060
+pasv_max_port=10090
+accept_timeout=5
+connect_timeout=1
+
+ 
+
+3. 建立用户文件
+#第一行用户名,第二行密码,不能使用root为用户名
+vim /etc/vsftpd/virtusers
+添加内容
+test
+123456
+liu
+123456
+
+ 
+
+4.生成用户数据文件
+首先你需要确定你是否有db_load这个命令
+rpm –q  db
+安装之前先查询一下 
+yum  search db4
+
+安装
+yum install-y  compat-db47.x86_64  (以你的机器为准) 
+生成db文件
+db_load -T -t hash-f /etc/vsftpd/virtusers /etc/vsftpd/virtusers.db
+
+ 
+
+#设定PAM验证文件,并指定对虚拟用户数据库文件进行读取
+chmod600/etc/vsftpd/virtusers.db   (权限r,w即可)
+
+ 
+
+5. 修改/etc/pam.d/vsftpd文件
+# 修改前先备份
+cp /etc/pam.d/vsftpd /etc/pam.d/vsftpd.bak
+
+ 
+
+# 将auth及account的所有配置行均注释掉
+vi /etc/pam.d/vsftpd
+在里面添加这两句话
+auth sufficient/lib64/security/pam_userdb.so db=/etc/vsftpd/virtusers
+account sufficient/lib64/security/pam_userdb.so db=/etc/vsftpd/virtusers
+
+
+# 如果系统为32位,上面lib64改为lib
+6.新建系统用户vsftpd,用户目录为/home/vsftpd
+#先在家目录下建立vsftpd文件夹,这也是我们访问的空间
+mkdir -p /home/vsftpd
+
+#用户登录终端设为/bin/false(即:使之不能登录系统)
+useradd vsftpd -d/home/vsftpd -s /bin/false
+chown -R vsftpd:vsftpd /home/vsftpd
+
+ 
+
+7.建立虚拟用户个人配置文件
+mkdir /etc/vsftpd/vconf
+cd/etc/vsftpd/vconf
+
+ 
+
+#这里建立两个虚拟用户配合文件
+touch test liu
+
+ 
+
+#建立用户根目录
+mkdir -p /home/vsftpd/test/
+
+ 
+
+#编辑test用户配置文件,内容如下,其他用户类似
+vi test
+
+local_root=/home/vsftpd/test/
+write_enable=YES
+anon_world_readable_only=NO
+anon_upload_enable=YES
+anon_mkdir_write_enable=YES
+anon_other_write_enable=YES
+
+
+8.防火墙设置(centos 7)
+#如果系统启用了防火墙和SELinux,那么还要做以下配置(默认情况下centos7是使用firewall和selinux的,不在使用iptables)
+
+
+#防火墙添加FTP服务:
+[aliyunzixun@xxx.com vsftpd]#firewall-cmd --permanent --zone=public --add-service=ftp
+[aliyunzixun@xxx.com vsftpd]#firewall-cmd --reload
+
+#设置SELinux:
+[aliyunzixun@xxx.com vsftpd]#getsebool -a | grep ftp
+[aliyunzixun@xxx.com vsftpd]#setsebool -P ftpd_full_access on
+
+ 
+
+9. 重启vsftpd服务器
+[aliyunzixun@xxx.com]# systemctl stop  vsftpd.service
+[aliyunzixun@xxx.com]# systemctl start  vsftpd.service
+[aliyunzixun@xxx.com]# systemctl status  vsftpd.service
+
+
+10. 在/home/vsftpd/test/下面件几个文件夹做测试
+mkdir  /home/vsftpd/test/test{1..5}
+11. 在浏览器或者我的电脑里输入ftp://192.168.163.126(局域网)测试
+以上是CentOS7种搭建FTP服务器的内容，更多 搭建 centos7 服务器 FTP 的内容，请您使用右上方搜索功能获取相关信息。
+```
